@@ -1,9 +1,20 @@
 function isPalindrome(word) {
+  let re = /[\W_]/g;
+  let lowRegWord = word.toLowerCase().replace(re, '');
+  let reverseWord = lowRegWord.split('').reverse().join(''); 
+  return reverseWord === lowRegWord;
   // Write your algorithm here
+
 }
+isPalindrome("word");
 
 /* 
   Add your pseudocode here
+  declare a function 
+  declare a variable palindrome that takes the form string
+  Use boolean on your function to return false or true
+  define output or return value
+  return your function
 */
 
 /*
